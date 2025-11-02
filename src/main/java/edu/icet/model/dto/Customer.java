@@ -2,8 +2,6 @@ package edu.icet.model.dto;
 
 import lombok.*;
 
-import java.time.LocalDate;
-
 @Getter
 @Setter
 @AllArgsConstructor
