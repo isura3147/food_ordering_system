@@ -1,9 +1,6 @@
 package edu.icet.model.dto;
 
-
 import lombok.*;
-
-import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -12,6 +9,6 @@ import java.time.LocalDate;
 @ToString
 public class OrderDetail {
     private int id;
-    private int itemCode;
+    private String itemCode;
     private int quantity;
 }
