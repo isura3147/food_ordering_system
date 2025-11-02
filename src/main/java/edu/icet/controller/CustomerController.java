@@ -17,6 +17,6 @@ public class CustomerController {
 
     @PostMapping("/register")
     public void addCustomer(@RequestBody Customer customer) {
-        System.out.println(customerService.addCustomer(customer));
+        customerService.addCustomer(customer);
     }
 }

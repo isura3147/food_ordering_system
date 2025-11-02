@@ -13,14 +13,13 @@ public class CustomerService {
     @Autowired
     CustomerRepository customerRepository;
 
-    public String addCustomer(Customer customer) {
+    public void addCustomer(Customer customer) {
         customerRepository.save(new CustomerEntity(
                 customer.getId(),
                 customer.getTitle(),
                 customer.getName(),
                 customer.getPhoneNumber()
         ));
-        return "All good mate";
     }
 
 }

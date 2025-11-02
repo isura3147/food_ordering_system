@@ -1,9 +1,6 @@
 package edu.icet.model.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Getter
@@ -14,6 +11,7 @@ import lombok.*;
 @Entity
 @Table(name = "item")
 public class ItemEntity {
+
     @Id
     @Column(length = 6, nullable = false)
     private String code;
